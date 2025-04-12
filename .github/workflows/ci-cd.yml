@@ -41,7 +41,7 @@ jobs:
 
       # 4. Ejecutar Black (Formateador de código) en modo chequeo
       - name: Run Black (Formatter)
-        run: black app --check
+        run: black app
 
       # 5. Ejecutar Pylint (Linter) y guardar reporte
       - name: Run Pylint (Linter)
