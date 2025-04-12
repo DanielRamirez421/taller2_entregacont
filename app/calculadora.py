@@ -1,9 +1,5 @@
 # app/calculadora.py
-"""Módulo de funciones aritméticas básicas.
-
-Contiene funciones para realizar suma, resta, multiplicación y división
-de dos números reales.
-"""
+"""Módulo de funciones aritméticas básicas"""
 
 def sumar(a, b):
     """

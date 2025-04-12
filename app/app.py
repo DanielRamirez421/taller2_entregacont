@@ -1,10 +1,5 @@
 # app/app.py
-"""Aplicación Flask para realizar operaciones aritméticas básicas.
-
-Este módulo define una aplicación web que permite a los usuarios
-realizar sumas, restas, multiplicaciones y divisiones a través
-de un formulario HTML.
-"""
+"""Aplicación que operaciones aritméticas"""
 
 from flask import Flask, render_template, request
 from .calculadora import sumar, restar, multiplicar, dividir
@@ -15,13 +10,8 @@ app = Flask(__name__)
 def index():
     """
     Ruta principal de la aplicación.
-
-    Muestra un formulario para que el usuario ingrese dos números y seleccione
-    una operación aritmética (sumar, restar, multiplicar, dividir). Procesa el
-    formulario en caso de envío y muestra el resultado correspondiente.
-
     Returns:
-        str: Renderizado del template HTML `index.html` con el resultado de la operación.
+        str: Renderizado del template HTML.
     """
     resultado = None
     if request.method == "POST":
